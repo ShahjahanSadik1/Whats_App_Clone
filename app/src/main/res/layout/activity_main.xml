@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <!--toolbar>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#008069"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whats App"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="26sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:weightSum="3"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/camera_icon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        />
+                     <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/search_icon"
+                         android:layout_gravity="center"
+                         android:layout_weight="1"
+                         android:layout_marginLeft="10dp"
+                        />
+                      <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/more_vert_icon"
+                         android:layout_gravity="center"
+                         android:layout_weight="1"
+                          android:layout_marginLeft="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <!--toolbar>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+
+
+    <!--TabLayout>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabTextColor="#B4FFFFFF"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabSelectedTextColor="#FFFFFF"
+        android:background="#008069"
+        app:tabIconTint="@color/white"
+        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        >
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/group_tab_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/groups_icon"
+            >
+
+        </com.google.android.material.tabs.TabItem>
+
+         <com.google.android.material.tabs.TabItem
+             android:id="@+id/chats_tab_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            >
+
+        </com.google.android.material.tabs.TabItem>
+
+
+
+
+
+          <com.google.android.material.tabs.TabItem
+              android:id="@+id/updates_tab_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="Updates"
+
+            >
+
+
+
+
+        </com.google.android.material.tabs.TabItem>
+          <com.google.android.material.tabs.TabItem
+              android:id="@+id/calls_tab_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:text="Calls"
+            >
+
+
+
+
+        </com.google.android.material.tabs.TabItem>
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+    <!--TabLayout>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--FrameLayout>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+
+        </FrameLayout>
+        <!--FrameLayout>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+
+
+        <!--ViewPager2>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="231dp"
+            />
+        <!--ViewPager2>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
